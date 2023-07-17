@@ -1,0 +1,15 @@
+* live-hiccup
+** Description
+Environment for editing backend html with hiccup and live browser refresh.
+** Preparation
+Will need to install the browser drivers you wish to use. Directions and links are in the docs for [[https://github.com/clj-commons/etaoin/tree/master][etaoin]]. The chromium driver can be used in place of Google chromes, but symlinks will need to be made from chromium to google-chrome, and possibly from the chromium driver to just ~chromedriver~.
+** Dependencies
+- [[https://github.com/weavejester/hiccup][hiccup]]
+- [[https://github.com/magnars/stasis][stasis]]
+- [[https://github.com/clj-commons/etaoin/tree/master][etaoin]]
+- [[https://github.com/juxt/dirwatch][dirwatch]]
+** Running
+The intent is to run the web server using lein-ring plugin. Start a project repl, and then run ~(start-watcher)~ from the repl. That will spin up a browser that can be manipulated by Clojure.
+** License
+Copyright 2023 Tim Hawes
+[[https://opensource.org/license/mit/][MIT License]]
