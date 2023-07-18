@@ -14,4 +14,5 @@
          ;;:init live-hiccup.core/start-watcher
          :auto-refresh? true
          :auto-reload? true}
+  :aliases {"build-site" ["run" "-m" "live-hiccup.core/export"]}
   :repl-options {:init-ns live-hiccup.core})
